@@ -46,7 +46,7 @@ const Sidebar = () => {
               <div key={item.title}>
                 <button
                   type="button"
-                  className="text-gray-400 dark:text-white m-3 mt-4 mb-6 uppercase flex justify-between items-center"
+                  className="w-full text-gray-400 dark:text-white m-3 mt-4 mb-6 pr-8 uppercase flex justify-between items-center"
                   onClick={(event) => {
                     event.preventDefault();
                     if (subHeading !== item.title) {
@@ -56,9 +56,12 @@ const Sidebar = () => {
                     }
                   }}
                 >
-                  <div className="flex items-center"><span className="inline-block text-lg">{item.icon}</span><span className="ml-4 capitalize"><Link to="/" className="text-md">{item.title}</Link></span></div>
+                  <div className="flex items-center">
+                    <span className="inline-block text-lg">{item.icon}</span>
+                    <span className="ml-4 capitalize"><Link to="/" className="text-md">{item.title}</Link></span>
+                  </div>
                   {item.links && (
-                    <span className="text-xl md:mt-1 md:ml-2 inline">
+                    <span className="text-xl md:mt-1 md:ml-2 inline-block">
                       <ion-icon name={`${subHeading === item.title ? 'chevron-down' : 'chevron-forward-outline'}`} />
                     </span>
                   )}
