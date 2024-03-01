@@ -6,7 +6,6 @@ import { useStateContext } from '../../contexts/ContextProvider';
 
 const Stacked = ({ width, height }) => {
   const { currentMode } = useStateContext();
-
   return (
     <ChartComponent
       id="charts"

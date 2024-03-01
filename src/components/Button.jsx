@@ -12,7 +12,7 @@ const Button = ({ icon, bgColor, color, secondColor, bgHoverColor, size, text, b
       style={{ backgroundColor: bgColor, color, borderRadius, display }}
       className={`text-${size} pr-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor} gap-${gap} items-center justify-between`}
     >
-      <span style={{ backgroundColor: secondColor }} className={"p-3"}>{icon}</span>s <span>{text}</span>
+      <span style={{ backgroundColor: secondColor }} className="p-3">{icon}</span> <span>{text}</span>
     </button>
   );
 };

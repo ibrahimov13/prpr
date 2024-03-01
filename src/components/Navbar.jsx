@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
-import { AiOutlineGlobal, AiOutlineUserSwitch } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineGlobal, AiOutlineUserSwitch } from 'react-icons/ai';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import english from '../data/english.jpg';
@@ -24,7 +23,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { currentColor, activeMenu, setActiveMenu, handleClick, isClicked, setScreenSize, screenSize } = useStateContext();
+  const { currentColor, activeMenu, setActiveMenu, handleClick, setScreenSize, screenSize } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -48,7 +47,6 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
-
       <NavButton title="Menu" customFunc={handleActiveMenu} color={currentColor} icon={<AiOutlineMenu />} />
       <div className="flex items-center gap-3">
         <TooltipComponent content="Language" position="BottomCenter">
@@ -69,16 +67,12 @@ const Navbar = () => {
             <MdKeyboardArrowDown className="text-gray-400 text-14" />
           </div>
         </TooltipComponent>
-        <div className='flex items-center'>
-          <NavButton title="Cart" customFunc={() => handleClick('cart')} color={currentColor} icon={<AiOutlineGlobal />} /> <span className="text-white font-bold ml-1 text-14">Support Request</span>
+        <div className="flex items-center">
+          <NavButton title="Cart" color={currentColor} icon={<AiOutlineGlobal />} /> <span className="text-white font-bold ml-1 text-14">Support Request</span>
         </div>
-        <div className='flex items-center'>
-          <NavButton title="Cart" customFunc={() => handleClick('cart')} color={currentColor} icon={<AiOutlineUserSwitch />} /> <span className="text-white font-bold ml-1 text-14">Sign Up</span>
+        <div className="flex items-center">
+          <NavButton title="Cart" color={currentColor} icon={<AiOutlineUserSwitch />} /> <span className="text-white font-bold ml-1 text-14">Sign Up</span>
         </div>
-        {/* <NavButton title="Chat" dotColor="#03C9D7" customFunc={() => handleClick('chat')} color={currentColor} icon={<BsChatLeft />} />
-        <NavButton title="Notification" dotColor="rgb(254, 201, 15)" customFunc={() => handleClick('notification')} color={currentColor} icon={<RiNotification3Line />} /> */}
-        
-        {/* {isClicked.notification && (<Notification />)} */}
       </div>
     </div>
   );
