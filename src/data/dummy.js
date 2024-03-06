@@ -158,8 +158,8 @@ export const links = [
     icon: <BiCategory />,
     links: [
       {
-        name: 'Kategori6 - 1',
-        url: 'calisan21',
+        name: 'TepHesapla',
+        url: 'TepHesapla',
         icon: <AiOutlineShoppingCart />,
       },
       {

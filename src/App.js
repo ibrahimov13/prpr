@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Propm, Calisan, Firma, FirmaTesis } from './pages';
+import { Propm, Calisan, Firma, FirmaTesis, TepHesapla } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
@@ -69,6 +69,7 @@ const App = () => {
                 <Route path="/calisan" element={(<Calisan />)} />
                 <Route path="/firmagenelayarlari" element={(<Firma />)} />
                 <Route path="/firmatesisayarlari" element={(<FirmaTesis />)} />
+                <Route path="/TepHesapla" element={(<TepHesapla />)} />
               </Routes>
             </div>
             <Footer />

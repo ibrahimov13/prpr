@@ -41,7 +41,7 @@ const Sidebar = () => {
               </button>
             </TooltipComponent>
           </div>
-          <div className="mt-10 ">
+          <div className="mt-10">
             {links.map((item) => (
               <div key={item.title}>
                 <button
