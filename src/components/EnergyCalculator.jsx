@@ -361,7 +361,7 @@ const EnergyCalculator = () => {
         </div>
 
         {/* <!-- Main modal --> */}
-        {isModalOpen &&
+        {isModalOpen && (
           <div
             id="timeline-modal"
             tabIndex="-1"
@@ -421,7 +421,8 @@ const EnergyCalculator = () => {
                 </div>
               </div>
             </div>
-          </div>}
+          </div>
+        )}
       </div>
     </div>
   );
