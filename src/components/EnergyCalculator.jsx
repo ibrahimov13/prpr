@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaCalendarAlt } from 'react-icons/fa';
 
 const energyenerjiTypes = [
   {
@@ -432,7 +433,7 @@ const EnergyCalculator = () => {
                   <ol className="relative border-s border-gray-200 dark:border-gray-600 ms-3.5 mb-4 md:mb-5">
                     <li className="mb-10 ms-8">
                       <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600">
-                        svg
+                        <FaCalendarAlt className="text-sm text-white" />
                       </span>
                       <h3 className="mb-3 ml-8 text-lg font-semibold text-gray-900 dark:text-white">Yılı Seçin</h3>
                       <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={selectedYear} onChange={handleYearChange} required>
@@ -446,7 +447,7 @@ const EnergyCalculator = () => {
                     </li>
                     <li className="ms-8">
                       <span className="absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600">
-                        svg
+                        <FaCalendarAlt className="text-sm text-white" />
                       </span>
                       <h3 className="mb-3 ml-8 text-lg font-semibold text-gray-900 dark:text-white">Ayı Seçin</h3>
                       <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={selectedMonth} onChange={handleMonthChange} required>
