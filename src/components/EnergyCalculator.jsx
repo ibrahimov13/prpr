@@ -5,201 +5,241 @@ const energyenerjiTypes = [
     unit: 'ton',
     'Power Supply': 'Taşkömürü',
     fixed: 0.61,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Kok Kömürü',
     fixed: 0.72,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Briket',
     fixed: 0.5,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Linyit teshin ve sanayi',
     fixed: 0.3,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Linyit santral',
     fixed: 0.2,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Elbistan Linyiti',
     fixed: 0.11,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Petrokok',
     fixed: 0.76,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Prina',
     fixed: 0.43,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Talaş',
     fixed: 0.3,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Kabuk',
     fixed: 0.225,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Grafit',
     fixed: 0.8,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Kok tozu',
     fixed: 0.6,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Maden',
     fixed: 0.55,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Elbistan Linyiti',
     fixed: 0.11,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Asfaltit',
     fixed: 0.43,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Odun',
     fixed: 0.3,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Hayvan ve Bitki Artığı',
     fixed: 0.23,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Ham Petrol',
     fixed: 1.05,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Fuel Oil No: 4',
     fixed: 0.96,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Fuel Oil No: 5',
     fixed: 1.003,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Fuel Oil No: 6',
     fixed: 0.986,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Motorin',
     fixed: 1.02,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Benzin',
     fixed: 1.04,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Gazyağı',
     fixed: 0.829,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Siyah Likör',
     fixed: 0.3,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Nafta',
     fixed: 1.04,
+    amount: 0,
   },
   {
     unit: 'm3',
     'Power Supply': 'Doğal Gaz',
-    fixed: 0.825,
+    fixed: 0.825 / 1000,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Kok Gazı',
     fixed: 0.82,
+    amount: 0,
   },
   {
     unit: 'm3',
     'Power Supply': 'Kok Gazı',
-    fixed: 0.403,
+    fixed: 0.403 / 1000,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'Yüksek Fırın Gazı ',
     fixed: 0.054,
+    amount: 0,
   },
   {
     unit: 'm3',
     'Power Supply': 'Yüksek Fırın Gazı',
-    fixed: 0.069,
+    fixed: 0.069 / 1000,
+    amount: 0,
   },
   {
     unit: 'm3',
     'Power Supply': 'Çelikhane Gazı',
-    fixed: 0.15,
+    fixed: 0.15 / 1000,
+    amount: 0,
   },
   {
     unit: 'm3',
     'Power Supply': 'Rafineri Gazı',
-    fixed: 0.878,
+    fixed: 0.878 / 1000,
+    amount: 0,
   },
   {
     unit: 'm3',
     'Power Supply': 'Asetilen',
-    fixed: 1.423,
+    fixed: 1.423 / 1000,
+    amount: 0,
   },
   {
     unit: 'm3',
     'Power Supply': 'Propan',
-    fixed: 1.02,
+    fixed: 1.02 / 1000,
+    amount: 0,
   },
   {
     unit: 'ton',
     'Power Supply': 'LPG',
     fixed: 1.09,
+    amount: 0,
   },
   {
     unit: 'm3',
     'Power Supply': 'LPG',
-    fixed: 2.7,
+    fixed: 2.7 / 1000,
+    amount: 0,
   },
   {
     unit: 'kWh',
     'Power Supply': 'Elektrik',
-    fixed: 0.086,
+    fixed: 0.086 / 1000,
+    amount: 0,
   },
   {
     unit: 'kWh',
     'Power Supply': 'Hidrolik',
-    fixed: 0.086,
+    fixed: 0.086 / 1000,
+    amount: 0,
   },
   {
     unit: 'kWh',
     'Power Supply': 'Jeotermal',
-    fixed: 0.86,
+    fixed: 0.86 / 1000,
+    amount: 0,
   },
 ];
 
@@ -226,7 +266,7 @@ const months = [
 ];
 
 const EnergyCalculator = () => {
-  const [energyData, setEnergyData] = useState(energyenerjiTypes.map((enerjiType) => ({ ...enerjiType, amount: 0 })));
+  const [energyData, setEnergyData] = useState(energyenerjiTypes.map((enerjiType) => ({ ...enerjiType })));
 
   const [selectedYear, setSelectedYear] = useState('');
   const [selectedMonth, setSelectedMonth] = useState('');
@@ -281,7 +321,11 @@ const EnergyCalculator = () => {
 
   const handleAmountChange = (index, amount) => {
     const updatedEnergyData = [...energyData];
-    updatedEnergyData[index].amount = parseFloat(amount);
+    if (amount) {
+      updatedEnergyData[index].amount = parseFloat(amount);
+    } else {
+      updatedEnergyData[index].amount = 0;
+    }
     setEnergyData(updatedEnergyData);
   };
 
@@ -314,7 +358,7 @@ const EnergyCalculator = () => {
                   />
                 </td>
                 <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{`(${enerjiType.unit})`}</td>
-                <td className="px-6 py-3 text-center">{(enerjiType.amount * enerjiType.fixed).toFixed(3)}</td>
+                <td className="px-6 py-3 text-center">{parseFloat((enerjiType.amount * enerjiType.fixed).toFixed(6))}</td>
               </tr>
             ))}
           </tbody>

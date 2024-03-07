@@ -158,7 +158,7 @@ export const links = [
     icon: <BiCategory />,
     links: [
       {
-        name: 'TepHesapla',
+        name: 'Tep Hesapla',
         url: 'TepHesapla',
         icon: <AiOutlineShoppingCart />,
       },
